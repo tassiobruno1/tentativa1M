@@ -6,56 +6,67 @@
     android:layout_height="match_parent"
     tools:context=".TelaDois">
 
+
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="246dp"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:ems="10"
         android:hint="Login"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:layout_constraintVertical_bias="0.5"
-        tools:layout_editor_absoluteX="95dp" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.68" />
 
     <EditText
         android:id="@+id/editTextNumberPassword"
-        android:layout_width="246dp"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="Senha"
         android:inputType="numberPassword"
         app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/button2" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="97dp"
-        android:layout_height="59dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="128dp"
         android:text="Entrar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword"
-        app:layout_constraintVertical_bias="0.5"
-        tools:layout_editor_absoluteX="172dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="254dp"
-        android:layout_height="206dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.554"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/deaf_education" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="278dp"
+        android:layout_height="257dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132"
+        app:srcCompat="@drawable/deaf_education" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="395dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
