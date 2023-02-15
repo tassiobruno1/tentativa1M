@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void teladois(View view) {
-        Intent in = new Intent(MainActivity.this, TelaDois.class);
+        Intent in = new Intent(MainActivity.this, TelaLogin.class);
         startActivity(in);
     }
 }
